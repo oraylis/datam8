@@ -13,23 +13,23 @@ Installing an MSI file on Windows is usually a straightforward process. Here is 
 
 3. **Welcome Screen:**
    After double-clicking the MSI file, a welcome screen should appear. Read any information or instructions on this screen carefully.
-   ![Welcome Screen](../assets/images/datam8_setup_1.png)
+   ![Welcome Screen](./assets/images/datam8_setup_1.png)
 
 4. **License Agreement:**
    Accept the license agreement if prompted. This is often a necessary prerequisite to proceed with the installation.
-   ![License Agreement](../assets/images/datam8_setup_2.png)
+   ![License Agreement](./assets/images/datam8_setup_2.png)
 
 5. **Choose Installation Location:**
    The installation wizard will likely ask you for the destination folder for the installation. A suitable folder is usually proposed by default. You can change this folder if desired.
-    ![Choose Installation Location](../assets/images/datam8_setup_3.png)
+    ![Choose Installation Location](./assets/images/datam8_setup_3.png)
 
 6. **Installation Process:**
    Start the installation process by clicking "Install" or a similar button. The wizard will now begin copying files and configuring the software on your computer.
-   ![Installation Process](../assets/images/datam8_setup_4.png)
+   ![Installation Process](./assets/images/datam8_setup_4.png)
 
 7. **Completion of Installation:**
    After the installation is complete, you may receive a message confirming the successful completion. You might also have the option to launch the application immediately.
-   ![Completion of Installation](../assets/images/datam8_setup_5.png)
+   ![Completion of Installation](./assets/images/datam8_setup_5.png)
 
 8. **Verify the Installation:**
    After installation, check if the application functions properly. Open it and ensure everything is running as expected.
