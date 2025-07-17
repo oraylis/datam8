@@ -73,6 +73,8 @@ A comprehensive quick start for _DataM8_ can be found in this 📜[guide](docs/q
 
 To contribute to _DataM8_, follow this contribution and branching 📜[guide](docs/contribution.md).
 
+The security guidelines can be found here 🔐[security](docs/security_guidelines.md).
+
 ## Conclusion
 
 With this comprehensive documentation, you should have a clear understanding of _DataM8_, its components, the solution structure, and how to work with generators. You are now equipped to effectively manage and maintain your data warehouse project using _DataM8_.

@@ -22,17 +22,17 @@ Each role in _DataM8_ contributes to the overall efficiency and quality of data 
 
 ### Step 1: Installation
 
-1. Download the [latest release](https://github.com/oraylis/automation/releases) of _DataM8_ from the GitHub Releases page. ![Overview](../assets/images/datam8_overview.png) ![Download](../assets/images/datam8_download.png)
-2. Install _DataM8_ by running the downloaded MSI installer and following the installation wizard. Ensure to accept the license and to select the correct installation path. ![Install](../assets/images/datam8_install.png)
+1. Download the [latest release](https://github.com/oraylis/automation/releases) of _DataM8_ from the GitHub Releases page. ![Overview](./assets/images/datam8_overview.png) ![Download](./assets/images/datam8_download.png)
+2. Install _DataM8_ by running the downloaded MSI installer and following the installation wizard. Ensure to accept the license and to select the correct installation path. ![Install](./assets/images/datam8_install.png)
 
-Please find comprehensive instructions for installation and portable usage [here](../installation/installation.md).
+Please find comprehensive instructions for installation and portable usage [here](./installation.md).
 
 ### Step 2: Project Setup
 
 1. Launch _DataM8_ by opening the application.
 2. Load your _DataM8_ solution or create a new one using the [Open](../frontend/frontend.md#open) or [New](../frontend/frontend.md#new) within the [Solution Group](../frontend/dialogues/group-solution.md). 
 
-![Overview](../assets/images/frontend_opened_open_new.png) 
+![Overview](./assets/images/frontend_opened_open_new.png) 
 
 ### Step 3: Working with Raw and Stage Entities - Data Model Developer Tasks
 
@@ -43,14 +43,14 @@ Please find comprehensive instructions for installation and portable usage [here
 3. Choose the entity you want to add and click "Add."
 4. Optionally, you can add a custom SQL query for the entity (if implemented).
 
-![Adding a raw entity](../assets/images/add_raw.png)
+![Adding a raw entity](./assets/images/add_raw.png)
 
 #### [Generating](../generator/generator.md) the [Stage](../metadatamodel/zones/stage.md#entity-definition)
 
 1. Ensure that the Stage generation settings are correctly configured in the settings.
 2. Click on the "Generate Stage" button to create the Stage from the [Raw](../metadatamodel/zones/raw.md#entity-definition) entity.
 
-![Generate Stage](../assets/images/generate_stage.png)
+![Generate Stage](./assets/images/generate_stage.png)
 
 ### Step 4: Automation Developer Tasks
 
@@ -71,7 +71,7 @@ As an Automation Developer, you can leverage Base Definitions and Generate/Templ
 1. After maintaining the Core entity, generate DDL/DML and potentially ETL/Orchestration jobs based on the defined Raw, Stage, and Core entity definitions.
 2. Generate output using the Jinja2-templates.
 
-![Generate Output](../assets/images/generate_output.png)
+![Generate Output](./assets/images/generate_output.png)
 
 Now, you are ready to harness the full power of _DataM8_ for your data engineering projects. For more in-depth insights and advanced features, refer to the complete _DataM8_ 📜[guide](../DataM8.md).
 
