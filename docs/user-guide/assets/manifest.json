@@ -1,0 +1,249 @@
+{
+  "capturedAt": "2026-09-30T19:34:48.313Z",
+  "frontendCommit": "49bff0163b9e9a4576f9f71ac55a5ef0007f1445",
+  "frontendWorkingTree": "documentation changes under review; no runtime edits by capture",
+  "backendCommit": "b2005a09830e997369f1995f11e51fa64bb968ac",
+  "backendDirty": false,
+  "schemaCommit": "b0d129ec4478485bc579943f7d44e35c063ffca4",
+  "sampleCommit": "1e1855e59e2734b3a393f9128193504626ab9380",
+  "mode": "browser, real local backend; no response mocks",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "deviceScaleFactor": 1,
+  "nodeVersion": "v24.19.0",
+  "theme": "light",
+  "sourceSanitization": "host=localhost, username=demo_user; secret remains a ref:// reference",
+  "checks": [
+    {
+      "name": "real backend solution load",
+      "result": "PASS"
+    },
+    {
+      "name": "UI edit → backend save → file assertion → reload",
+      "result": "PASS"
+    },
+    {
+      "name": "controlled offline save failure → online context-switch retry → real file persisted",
+      "result": "PASS"
+    },
+    {
+      "name": "UI Generate → real /model/generate completion → Output/docs/index.md contains Customer",
+      "result": "PASS"
+    },
+    {
+      "name": "uncaught browser errors",
+      "result": "PASS",
+      "details": []
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "01-open-solution.png",
+      "description": "Browser Load reads the startup-bound workspace; the displayed path is illustrative.",
+      "status": "captured"
+    },
+    {
+      "file": "02-workspace.png",
+      "description": "Loaded sample with Stage, Core, Curated and Consumer zones.",
+      "status": "captured"
+    },
+    {
+      "file": "03-zones.png",
+      "description": "Stage zone, target and local folder name.",
+      "status": "captured"
+    },
+    {
+      "file": "04-data-types.png",
+      "description": "Data Types editor using the sample metadata.",
+      "status": "captured"
+    },
+    {
+      "file": "05-attribute-types.png",
+      "description": "Attribute Types editor using the sample metadata.",
+      "status": "captured"
+    },
+    {
+      "file": "06-data-products.png",
+      "description": "Data Products editor using the sample metadata.",
+      "status": "captured"
+    },
+    {
+      "file": "07-properties.png",
+      "description": "Properties editor using the sample metadata.",
+      "status": "captured"
+    },
+    {
+      "file": "08-property-values.png",
+      "description": "Property Values editor using the sample metadata.",
+      "status": "captured"
+    },
+    {
+      "file": "09-data-source-types.png",
+      "description": "Data Source Types editor using the sample metadata.",
+      "status": "captured"
+    },
+    {
+      "file": "10-data-sources.png",
+      "description": "Data Sources editor using the sample metadata.",
+      "status": "captured"
+    },
+    {
+      "file": "11-customer-overview.png",
+      "description": "Stage Customer with inherited and direct properties.",
+      "status": "captured"
+    },
+    {
+      "file": "12-customer-attributes.png",
+      "description": "Stage Customer attributes.",
+      "status": "captured"
+    },
+    {
+      "file": "13-customer-sources.png",
+      "description": "Stage Customer sources.",
+      "status": "captured"
+    },
+    {
+      "file": "14-customer-relationships.png",
+      "description": "Stage Customer relationships.",
+      "status": "captured"
+    },
+    {
+      "file": "15-autosave.png",
+      "description": "Edited Customer description persisted by the real backend.",
+      "status": "captured"
+    },
+    {
+      "file": "22-save-retry.png",
+      "description": "Controlled offline transport failure showing the real transient Save failed status. Recovery uses a context-switch persist attempt; no Retry button is present.",
+      "status": "captured"
+    },
+    {
+      "file": "21-folder-metadata.png",
+      "description": "Customer folder metadata and inherited context.",
+      "status": "captured"
+    },
+    {
+      "file": "16-transformations.png",
+      "description": "Core Customer transformation steps.",
+      "status": "captured"
+    },
+    {
+      "file": "17-create-entity.png",
+      "description": "Entity creation wizard before submitting mutations.",
+      "status": "captured"
+    },
+    {
+      "file": "18-refresh-sources.png",
+      "description": "Refresh selection before scanning; requires a reachable source to continue.",
+      "status": "captured"
+    },
+    {
+      "file": "19-generator-target.png",
+      "description": "Documentation target selected; Generate writes into Output/docs.",
+      "status": "captured"
+    },
+    {
+      "file": "20-generator-success.png",
+      "description": "Real docs generation succeeded. Local output path masked for publication.",
+      "status": "captured"
+    }
+  ],
+  "limitations": [
+    "No Docker executable available in the authoring environment; live SQL import/refresh and preview review were not exercised.",
+    "Browser screenshots do not verify native Electron dialogs or function create/delete.",
+    "Other targets are documented from metadata/templates; only docs generation is verified by this capture."
+  ],
+  "routes": [
+    "/health",
+    "/version",
+    "/config",
+    "/solution",
+    "/solution/full",
+    "/model/generate",
+    "/model/save",
+    "/model/reload",
+    "/model/unsaved",
+    "/entities",
+    "/entities/{locator}",
+    "/entities/clone",
+    "/entities/rename",
+    "/entities/move",
+    "/entities/move-single",
+    "/sources/{data_source}/test",
+    "/sources/{data_source}/locations",
+    "/sources/{data_source}/locations/metadata",
+    "/sources/{data_source}/locations/import-description",
+    "/sources/{data_source}/locations/preview",
+    "/sources/{data_source}/import",
+    "/sources/compare",
+    "/sources/{data_source}/usages",
+    "/plugins",
+    "/plugins/reload",
+    "/plugins/{plugin_id}",
+    "/plugins/{plugin_id}/ui-schema",
+    "/plugins/{plugin_id}/data-type-mappings",
+    "/plugins/{plugin_id}/connection-properties",
+    "/secrets/check",
+    "/secrets/set",
+    "/functions",
+    "/functions/{modelEntityId}",
+    "/functions/{modelEntityId}/{stepNo}",
+    "/functions/{modelEntityId}/{name}",
+    "/functions/{modelEntityId}/{stepNo}/move",
+    "/functions/{modelEntityId}/{name}/move"
+  ],
+  "requests": [
+    {
+      "method": "PATCH",
+      "path": "/entities/modelEntities/010-Stage/Sales/Customer/Customer",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/model/save",
+      "status": 204
+    },
+    {
+      "method": "POST",
+      "path": "/model/reload",
+      "status": 200
+    },
+    {
+      "method": "PATCH",
+      "path": "/entities/modelEntities/010-Stage/Sales/Customer/Customer",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/model/save",
+      "status": 204
+    },
+    {
+      "method": "PATCH",
+      "path": "/entities/modelEntities/010-Stage/Sales/Customer/Customer",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/model/save",
+      "status": 204
+    },
+    {
+      "method": "PATCH",
+      "path": "/entities/modelEntities/010-Stage/Sales/Customer/Customer",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/model/save",
+      "status": 204
+    },
+    {
+      "method": "POST",
+      "path": "/model/generate",
+      "status": 200
+    }
+  ]
+}

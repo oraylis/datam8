@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-01",
+  "publishedIllustrations": "Original 2026-09-30 capture retained without overwrite",
+  "browser": {
+    "frontendCommit": "49bff0163b9e9a4576f9f71ac55a5ef0007f1445",
+    "frontendWorkingTree": "M apps/desktop/src/README.md\n M apps/web/src/app/README.md\n M apps/web/src/features/fs/README.md\n M apps/web/src/features/generator/README.md\n M apps/web/src/features/model/README.md\n M apps/web/src/features/model/generated-schema-types.ts\n M apps/web/src/features/solution/README.md\n M packages/types/README.md\n M packages/ui/README.md",
+    "backendCommit": "85683fcaeaf13c4573bee3de9c4668b1ba3ab3b9",
+    "backendDirty": true,
+    "schemaCommit": "f7dd5f519c5e17c5b595c5b99f600c51b9fe84ac",
+    "sampleCommit": "1e1855e59e2734b3a393f9128193504626ab9380",
+    "nodeVersion": "v24.19.0",
+    "exportedImages": 22,
+    "checks": [
+      {
+        "name": "real backend solution load",
+        "result": "PASS"
+      },
+      {
+        "name": "UI edit → backend save → file assertion → reload",
+        "result": "PASS"
+      },
+      {
+        "name": "controlled offline save failure → online context-switch retry → real file persisted",
+        "result": "PASS"
+      },
+      {
+        "name": "UI Generate → real /model/generate completion → Output/docs/index.md contains Customer",
+        "result": "PASS"
+      },
+      {
+        "name": "uncaught browser errors",
+        "result": "PASS",
+        "details": []
+      }
+    ]
+  },
+  "sampleMain": {
+    "sampleCommit": "68001a2dcaa0b2931ee341f3527b96266a6e46da",
+    "backendCommit": "85683fcaeaf13c4573bee3de9c4668b1ba3ab3b9",
+    "schemaCommit": "f7dd5f519c5e17c5b595c5b99f600c51b9fe84ac",
+    "preExistingIndexRemoved": true,
+    "checks": [
+      {
+        "name": "CLI validate sample-main copy",
+        "result": "PASS",
+        "exitCode": 0
+      },
+      {
+        "name": "CLI generate sample-main copy",
+        "result": "PASS",
+        "exitCode": 0
+      },
+      {
+        "name": "newly generated index exists and contains Customer",
+        "result": "PASS"
+      }
+    ],
+    "scope": "CLI on disposable copy; no SQL transport or deployment"
+  },
+  "scope": "Local development acceptance. Not packaged desktop, SQL or deployment."
+}
