@@ -39,6 +39,15 @@ Those pages describe sample environment conventions, not a universal least-privi
 policy. Validate prerequisites and permissions for your environment before deployment.
 This guide does not verify Azure, Databricks or Fabric deployment.
 
+## Develop a connector
+
+Start with [Develop Your Own Connector](../connectors.md). The backend's runnable
+example and interface reference show how to expose navigation, native column types,
+connection configuration and optional preview. A plugin can live in your solution
+or a separate shared repository; the frontend consumes its definitions generically.
+Use the documented development revisions rather than assuming desktop beta.6
+contains these changes.
+
 ## Contribute to the frontend
 
 Use the [development entry point](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/README.md), [AGENTS.md](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/AGENTS.md),

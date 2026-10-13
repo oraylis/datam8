@@ -14,8 +14,9 @@ the same backend, not two interchangeable implementations.
 
 ## Extension paths
 
-- **Connector:** implement the backend's Python plugin interface and declare
-  capabilities. Follow [connector development](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/docs/connectors.md).
+- **Connector:** keep custom plugins in a solution or shared repository and implement
+  the backend's Python interface. Start with [develop your own connector](connectors.md);
+  the backend owns the technical specification and executable example.
 - **Target/template:** shape payloads in Python and render them with Jinja; keep
   target-specific properties and contracts in the sample.
   Follow [template development](https://github.com/oraylis/datam8-sample-solution/blob/codex/documentation-v2/docs/template-development.md).

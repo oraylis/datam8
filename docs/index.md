@@ -13,7 +13,7 @@
 - [Templates, payloads and target references](generator/README.md)
 - [CLI validation and generation](validator.md)
 - [Schema reference](metadatamodel/README.md)
-- [Connector development](repositories.md#extension-paths)
+- [Develop your own connector](connectors.md)
 
 ## Develop and maintain
 

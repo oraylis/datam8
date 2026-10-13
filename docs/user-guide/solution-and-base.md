@@ -56,7 +56,8 @@ zones can affect model folders; use a disposable copy for these operations.*
 
 ![Data type editor with shared type definitions](assets/04-data-types.png)
 
-*Data Types describe reusable physical type settings.*
+*Data Types define reusable model types and their generation-target settings.
+They are distinct from a connector's native source type names.*
 
 ![Attribute type editor with semantic roles](assets/05-attribute-types.png)
 
@@ -66,6 +67,20 @@ zones can affect model folders; use a disposable copy for these operations.*
 
 *Data products organize modeled data; effective product/module context may inherit
 from folders.*
+
+## Source types, model types and Attribute Types
+
+A source may describe a column as `BIGINT`. A saved Data Source Type mapping can
+translate it to the model type `long`, while its source mapping retains `BIGINT`.
+A Data Source can override that conversion. Length, precision and scale are
+separate metadata fields when the connector supplies them.
+
+Define the mapped model types under **Data Types**. **Attribute Types** describe
+semantic roles; backend import selects exactly one default with a matching
+`defaultType` and `isDefaultProperty=true`. The frontend's metadata-only import
+uses `Regular` instead. Linking a plugin does not create either set of definitions.
+See [Sources and Connectors](sources.md#configure-type-mappings) for the current
+development behavior and its version boundaries.
 
 ## Properties and inheritance
 
