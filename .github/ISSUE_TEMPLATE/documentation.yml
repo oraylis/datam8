@@ -1,0 +1,24 @@
+name: Documentation improvement
+description: Correct or extend DataM8 v2 documentation
+title: "[Docs]: "
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Topic owner
+      options: [Product handbook, Frontend, CLI/backend, Schema, Sample/target]
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page URL and version
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Problem, proposed correction and acceptance evidence
+      description: State whether new screenshots or a real workflow run are needed.
+    validations:
+      required: true

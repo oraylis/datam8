@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sensitive vulnerability report
+    url: https://github.com/oraylis/datam8/security/advisories/new
+    about: Report sensitive security findings privately.

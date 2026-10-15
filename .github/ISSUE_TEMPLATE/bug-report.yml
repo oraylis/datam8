@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible DataM8 v2 problem
+title: "[Bug]: "
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options: [Frontend, CLI/backend, Schema, Sample/target, Documentation, Cross-component]
+    validations:
+      required: true
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions and environment
+      description: Frontend, backend, schema and sample tags/commits; desktop or browser; OS/architecture.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction, expected result and actual result
+      description: Use disposable data. Include sanitized errors; keep tokens and private solution contents out of this report.
+    validations:
+      required: true
+  - type: textarea
+    id: documentation
+    attributes:
+      label: Affected documentation or screenshots
+      description: Link the page and version you followed, if applicable.

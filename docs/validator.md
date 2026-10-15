@@ -1,19 +1,16 @@
-# _DataM8_ Validator
+# Validate and Generate with the CLI
 
-_DataM8_ includes a command-line interface (CLI) tool for validating its metadata model. This tool is essential for ensuring that the serialized JSON model complies with the predefined structure and rules. It can be seamlessly integrated into the development workflow, particularly for performing checks and releases using Continuous Integration and Continuous Deployment (CI/CD) pipelines.
+Validation is part of the DataM8 Python CLI/backend. Install the selected backend
+revision using its [development instructions](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/README.md), then read
+[CLI usage](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/docs/cli.md). The desktop application bundles its backend.
 
-## Usage
+Run commands on a disposable full solution copy:
 
-To utilize the _DataM8_ validator, you can employ the following parameters:
-
-```console
-> Dm8Validate.exe
-
--f, --fileName      Required. Full path of the Dm8-Solution file to validate (path to .dm8s file).
---help              Display this help screen.
---version           Display version information.
+```sh
+datam8 validate --solution /path/to/copy/ORAYLISDatabricksSample.dm8s
+datam8 generate docs --solution /path/to/copy/ORAYLISDatabricksSample.dm8s
 ```
 
-The DataM8 validator plays a crucial role in maintaining the integrity and accuracy of the metadata model. By executing the validator, you can ascertain the consistency and correctness of the data model, thus minimizing the potential risks of errors and ensuring the seamless flow of data processing operations.
-
-Whether you are using the frontend application or any other tool, the DataM8 validator serves as a dependable mechanism for validating the serialized JSON model, thereby enhancing the overall quality and reliability of your data management processes.
+Successful generation means files were produced, not that they were deployed or
+executed. Check the process exit code and inspect newly written output. Do not
+assume a validation command has a matching editor button or HTTP route.
