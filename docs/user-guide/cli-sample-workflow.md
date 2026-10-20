@@ -6,18 +6,13 @@ complete working copy of the configured sample solution.
 
 ## Prerequisites and working copy
 
-Use the development CLI on `feature/agent-model-cli`, tested at
-`c5ac8f8f80ed644e21e962ac2e80761a2a093a18`. These mutation commands are not part of
-the older CLI used in the illustrated guide. The canonical
-[agent CLI contract](https://github.com/oraylis/datam8-cli/blob/c5ac8f8f80ed644e21e962ac2e80761a2a093a18/docs/cli-agent-contract.md)
+Use the CLI from `main`. The canonical
+[agent CLI contract](https://github.com/oraylis/datam8-cli/blob/main/docs/cli-agent-contract.md)
 defines input, output and batch semantics.
 
-Use sample model/templates revision
-`1e1855e59e2734b3a393f9128193504626ab9380` with a working local AdventureWorks
-connection and `dataSourceTypes/SQLServer.pluginId` set to `builtin:SQLServer`.
-The connected example uses `[SalesLT].[Address]` with nine attributes. Sample
-main `4df5d7b` lacked the plugin binding; a checkout of that revision alone is
-not the configured input for this walkthrough.
+Use the sample solution with a working local AdventureWorks connection and
+`dataSourceTypes/SQLServer.pluginId` set to `builtin:SQLServer`. The connected
+example uses `[SalesLT].[Address]` with nine attributes.
 
 Copy the entire configured sample directory, including Base, Model, Plugins and
 Generate, to `C:\work\sample-cli`. Start from a copy without the `CliDemo` module.
@@ -79,7 +74,7 @@ datam8 --% create folders/030-Curated/Sales/CliDemo --data "{\"id\":990003,\"dat
 datam8 --% create folders/040-Consumer/Sales/CliDemo --data "{\"id\":990004,\"dataProduct\":\"Sales\",\"dataModule\":\"CliDemo\"}" --json
 ```
 
-Folder IDs are still required by this CLI revision. These example IDs must be
+Folder IDs are currently required by the CLI. These example IDs must be
 unused in your copy. Model-entity IDs, in contrast, are assigned automatically.
 Locators use actual folder names such as `010-Stage`, not the zone name `stage`.
 
@@ -177,4 +172,4 @@ Read the affected entity with `show` before continuing. Do not replay successful
 Each command saves separately, so an error in a later command does not undo
 earlier writes. Repeat the walkthrough in a fresh full sample copy when starting
 over. The same commands are also available in ordered batches; see the
-[CLI batch contract](https://github.com/oraylis/datam8-cli/blob/c5ac8f8f80ed644e21e962ac2e80761a2a093a18/docs/cli-agent-contract.md#ordered-batches).
+[CLI batch contract](https://github.com/oraylis/datam8-cli/blob/main/docs/cli-agent-contract.md#ordered-batches).

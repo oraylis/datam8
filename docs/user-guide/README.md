@@ -24,7 +24,7 @@ switch to Base to begin; the upper-right actions open refresh and generation.*
 
 Follow chapters 1–4 and 6 first. Chapter 5 is an optional connected-data workflow.
 For model maintenance from the terminal, use the separate
-[development CLI sample workflow](cli-sample-workflow.md).
+[CLI sample workflow](cli-sample-workflow.md).
 Screenshots use the real editor with neutral connection values. English UI labels
 are preserved; sample attribute names such as `KundenID` are not translated.
 
