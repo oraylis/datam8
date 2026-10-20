@@ -12,6 +12,7 @@
 
 - [Templates, payloads and target references](generator/README.md)
 - [CLI validation and generation](validator.md)
+- [Extend the sample model with the development CLI](user-guide/cli-sample-workflow.md)
 - [Schema reference](metadatamodel/README.md)
 - [Develop your own connector](connectors.md)
 
