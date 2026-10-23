@@ -26,10 +26,11 @@ Do not add a password to a committed JSON file.
 
 ## Open in desktop
 
-An installed desktop/sample combination still needs the separate packaged
-acceptance described in [compatibility](../compatibility.md). For the already verified
-browser path, use the exact capture revisions listed there. For desktop acceptance,
-select the intended installed version and a disposable sample copy. If developing locally, follow the [frontend setup](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/README.md#local-development).
+Install the app using [the stable-release instructions](../installation.md).
+The pinned tutorial sample and browser capture have their own
+[historical provenance](../compatibility.md); using another installed runtime
+requires a separate check on a disposable sample copy. If developing locally,
+follow the [frontend setup](https://github.com/oraylis/datam8-frontend/blob/main/README.md#local-development).
 Node and uv are development prerequisites; an installed desktop package bundles
 its backend runtime.
 
@@ -46,7 +47,7 @@ below show the browser alternative, not a photographed native picker.
 
 For local development, start Generator with `--solution` pointing to the copied
 `.dm8s`, then start Vite with `VITE_API_URL` matching its port. Exact Windows and
-POSIX commands are in the [frontend README](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/README.md#local-development).
+POSIX commands are in the [frontend README](https://github.com/oraylis/datam8-frontend/blob/main/README.md#local-development).
 
 1. Open the Vite URL, normally `http://localhost:4320`.
 2. In **Select solution (.dm8s)**, enter the copied path and choose **Load**.
@@ -70,4 +71,4 @@ the backend with the intended `--solution` to change the loaded solution.*
 
 The tutorial does not rely on **New Project**, migration or uploading a lone
 `.dm8s`. Historical parity endpoints do not establish these flows as supported
-by the pinned backend. See [backend constraints](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/docs/backend-contract.md).
+by the pinned backend. See [backend constraints](https://github.com/oraylis/datam8-frontend/blob/main/docs/backend-contract.md).

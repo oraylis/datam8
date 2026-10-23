@@ -8,8 +8,10 @@ validation and import work offline with accessible files.
 
 The screenshots describe the recorded tutorial combination in [compatibility](../compatibility.md).
 The published capture did not run a live SQL import/refresh; Docker was unavailable.
-The builtin and type-mapping instructions below describe the current development
-frontend/backend, not an additional beta.6 or screenshot acceptance result.
+The builtin and type-mapping instructions below follow the maintained component
+references. For an installed release, consult those references at its tag and
+check its bundled runtime. These instructions do not add source-connectivity or
+screenshot acceptance evidence to the recorded capture.
 
 ## Inspect the binding
 
@@ -63,7 +65,7 @@ check, so a successful mapping is not proof that the solution defines the type.
 When the frontend receives a complete backend import description, it retains its
 Attribute Types. For the alternative metadata-only import, it uses the same saved
 type mappings and assigns `Regular`; ensure that Attribute Type is defined.
-See [the technical contract](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/docs/backend-contract.md#source-import-and-refresh)
+See [the technical contract](https://github.com/oraylis/datam8-cli/blob/main/docs/backend-contract.md#source-import-and-refresh)
 for precise ownership and matching semantics.
 
 ## Use the ODCS builtin
@@ -90,7 +92,7 @@ ODCS preserves physical source types, or uses the declared logical type when no
 physical type is given. Unknown physical types need explicit mappings.
 Business names become display names, while the chosen target name remains technical.
 Nested properties stay one attribute; quality/governance sections are not imported.
-See [builtin configuration and limits](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/docs/builtin-sources.md#local-odcs-contracts)
+See [builtin configuration and limits](https://github.com/oraylis/datam8-cli/blob/main/docs/builtin-sources.md#local-odcs-contracts)
 for details.
 
 ## Use the Unity Catalog builtin
@@ -109,12 +111,12 @@ Metadata does not need a SQL Warehouse. Preview additionally requires a warehous
 ID or its HTTP path and suitable permissions. Without that query configuration,
 preview remains disabled. Preview accepts 1–1000 rows and has a shared 30-second
 budget; it may time out independently of working metadata navigation.
-See [configuration and preview limits](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/docs/builtin-sources.md#databricks-unity-catalog).
+See [configuration and preview limits](https://github.com/oraylis/datam8-cli/blob/main/docs/builtin-sources.md#databricks-unity-catalog).
 
 ## Prepare a local SQL source
 
 For a reproducible connected exercise, use the backend's
-[local AdventureWorks SQL Server setup](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/tests/db/README.md).
+[local AdventureWorks SQL Server setup](https://github.com/oraylis/datam8-cli/blob/main/tests/db/README.md).
 Restore the sample database, configure a source in your copy for that container
 and supply credentials through the supported secret UI/keyring setup. Install
 the pinned backend's SQL extras and the required SQL Server driver for your OS.
@@ -158,6 +160,6 @@ Review each proposed change before applying. Pay particular attention to removed
 mappings and type changes. After application, inspect affected entity JSON and
 Reload. Run generation to expose unresolved model dependencies.
 
-See the [canonical source contract](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/docs/backend-contract.md#source-import-and-refresh)
+See the [canonical source contract](https://github.com/oraylis/datam8-cli/blob/main/docs/backend-contract.md#source-import-and-refresh)
 for ownership/conflict details; do not assume all manually assigned source metadata
 will survive an authoritative connector refresh.

@@ -14,7 +14,7 @@ documentation change does not implement product fixes or deploy infrastructure.
 | P2 | Frontend | Desktop-only functions and native dialogs | Exercise native picker and function create/delete with constrained paths; capture real UI and persisted files |
 | P2 | Sample | Replace existing Azure pipeline recipe | Remove superseded tooling; use pinned v2 validate/generate commands in a test pipeline; environment/secret setup remains explicit; no automatic cloud deployment |
 | P2 | Sample | Lakeflow target integration | Separate authorized target-port change; document implementation differences and test generated output before adding it to main-derived target reference |
-| P2 | Maintainers | Publish support commitments | Identify maintained beta/release versions and reporting process without inferring commitments from stale version tables |
+| P2 | Maintainers | Publish support commitments | Identify maintained releases and reporting process without inferring commitments from stale version tables |
 | P3 | Documentation | Documentation website | Render the central Markdown and assets; preserve version/pin navigation; do not maintain duplicate text |
 
 ## Product reproductions

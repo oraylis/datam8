@@ -20,7 +20,7 @@ a data source supplies concrete connection values. Source mappings describe inpu
 relationships describe links between objects. Properties acquire behavior through
 the selected target and are not universal engine options.
 
-For field constraints, use the [schema reference](https://github.com/oraylis/datam8-model/blob/feature/v2-beta-port/docs/reference.md).
+For field constraints, use the [schema reference](https://github.com/oraylis/datam8-model/blob/main/docs/reference.md).
 For actual inherited values and target interpretation, follow the
 [illustrated solution chapter](user-guide/solution-and-base.md) and
-[sample references](https://github.com/oraylis/datam8-sample-solution/blob/codex/documentation-v2/docs/reference/targets.md).
+[sample references](https://github.com/oraylis/datam8-sample-solution/blob/main/docs/reference/targets.md).

@@ -1,8 +1,11 @@
 # Validate and Generate with the CLI
 
-Validation is part of the DataM8 Python CLI/backend. Install the selected backend
-revision using its [development instructions](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/README.md), then read
-[CLI usage](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/docs/cli.md). The desktop application bundles its backend.
+Validation is part of the DataM8 Python CLI/backend. Follow
+[CLI installation](installation.md#datam8-cli) to install a compatible stable
+release, then read [CLI usage](https://github.com/oraylis/datam8-cli/blob/main/docs/cli.md).
+That reference follows `main`; open the same document at your release tag for
+version-specific commands. A source checkout is only needed for development.
+The desktop application bundles its backend.
 
 Run commands on a disposable full solution copy:
 

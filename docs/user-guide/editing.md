@@ -23,7 +23,7 @@ accepting a notification alone as proof of persistence.*
 
 Generation is not a substitute for saving. Do not assume closing a tab or the app
 will resolve a failed save. There is no manual Save All button in this captured UI.
-See the [autosave reference](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/docs/autosave.md) for contributor-level trigger details.
+See the [autosave reference](https://github.com/oraylis/datam8-frontend/blob/main/docs/autosave.md) for contributor-level trigger details.
 
 ## Recover from a failure
 
