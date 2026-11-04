@@ -1,10 +1,16 @@
-# Compatibility and Verification Evidence
+# Historical Capture and Release Provenance
 
-Do not infer compatibility from matching beta numbers or the moving `main` branch.
-Use a complete, tested frontend/backend/schema/sample combination. Installed desktop
-packages supply their own backend; a separately installed CLI does not replace it.
+This maintainer reference preserves the source revisions and release metadata
+inspected for the September/October 2026 documentation captures. It is a historical
+record, not a description of the current release status. For current stable app
+and CLI downloads, see [installation](installation.md).
 
-## Published desktop candidate
+Matching version numbers or moving `main` branches do not establish compatibility.
+Installed desktop packages supply their own backend; a separately installed CLI
+does not replace it. Use the selected release's build manifest and technical
+references at its tag to identify that installation.
+
+## Historical desktop source inspection
 
 The [v2.0.0-beta.6 desktop release](https://github.com/oraylis/datam8-frontend/releases/tag/v2.0.0-beta.6)
 points to frontend commit `a57ae23e07c7496c3202e0343929d1a42ccf216c`.
@@ -12,8 +18,8 @@ Its Git tree pins backend source `53cc8214a2b388c3988affd4b55d8b04e9cdb55d`,
 which pins schema source `beaea1839810dcd535d87d0a973e67b8e9959e3e`.
 These are release source pins, not an inspection of the installed artifact's runtime.
 Artifact availability is verified from release metadata. Packaged execution and
-compatibility with either sample revision below have **not** been verified by this
-documentation update. Read its plugin-layout breaking change before opening a solution.
+compatibility with either sample revision below were **not** verified by that
+documentation capture. Read its plugin-layout breaking change before opening a solution.
 The separate [CLI beta.4 release](https://github.com/oraylis/datam8-cli/releases/tag/v2.0.0-beta.4)
 is not evidence of the backend bundled in desktop beta.6.
 
@@ -30,14 +36,14 @@ This is a development combination, not an installed-release recommendation. The
 [original manifest](user-guide/assets/manifest.json) records five passing checks,
 22 captures and limits. Moving the images does not retest another version.
 
-## Sample documentation baseline
+## Historical sample baseline and CLI run
 
-The sample documentation branch starts at main commit
+The sample documentation branch started at main commit
 `68001a2dcaa0b2931ee341f3527b96266a6e46da`. Its descriptor defines **three** targets:
 databricks (`Generate/databricks-lake`), powerbi and docs. Its package configuration
-pins CLI beta.1. Do not combine its paths with the four-target tutorial snapshot.
-Current-backend generation of this baseline is checked separately and any failure
-is recorded in [the handoff](handoff.md); it is not assumed compatible.
+pinned CLI beta.1. This records the old package pin, not a current installation
+recommendation. Do not combine its paths with the four-target tutorial snapshot.
+The recorded CLI run below checked generation of this baseline separately.
 
 The 2026-10-01 CLI run passed validate and docs generation using backend
 `85683fcaeaf13c4573bee3de9c4668b1ba3ab3b9` and its pinned schema

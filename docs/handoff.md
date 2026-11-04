@@ -1,4 +1,10 @@
-# Documentation Integration Handoff
+# Historical Documentation Integration Handoff
+
+This page preserves the original documentation integration handoff. Branch names,
+workspace state and publication instructions below describe that historical task,
+not the current repository status. For current downloads, see
+[installation](installation.md); for maintained references, see
+[repositories and responsibilities](repositories.md).
 
 ## Workspaces and branches
 
@@ -38,7 +44,7 @@ Its browser tuple is Frontend `49bff0163b9e9a4576f9f71ac55a5ef0007f1445`, Backen
 `b0d129ec4478485bc579943f7d44e35c063ffca4`, Sample
 `1e1855e59e2734b3a393f9128193504626ab9380`. Moving it does not recertify desktop beta.6.
 
-On 2026-10-01, the current backend `85683fcaeaf13c4573bee3de9c4668b1ba3ab3b9`
+On 2026-10-01, backend `85683fcaeaf13c4573bee3de9c4668b1ba3ab3b9`
 with pinned schema `f7dd5f519c5e17c5b595c5b99f600c51b9fe84ac` validated a disposable
 sample-main archive and generated its docs. Final results are recorded in the
 [verification report](verification.md).

@@ -5,7 +5,6 @@
 - [Installation and first launch](installation.md)
 - [Illustrated user guide](user-guide/README.md)
 - [Metadata and generation concepts](concepts.md)
-- [Compatibility and verification evidence](compatibility.md)
 - [Troubleshooting](user-guide/troubleshooting.md)
 
 ## Build automations
@@ -23,4 +22,5 @@
 - [Security reporting and secret handling](security_guidelines.md)
 - [Follow-up backlog](todos.md)
 - [Manual merge handoff](handoff.md)
-- [Verification results](verification.md)
+- [Historical verification results](verification.md)
+- [Historical capture and release provenance](compatibility.md)

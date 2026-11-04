@@ -24,11 +24,12 @@
 | Generation fails | Read target/backend error, check schema compatibility, references and template configuration |
 | Generated files missing | Check the selected target's `outputPath` and successful completion; generation is not deployment |
 
-These source-mapping/builtin remedies describe the current development behavior,
-not an additional verification of desktop beta.6. See [Sources and Connectors](sources.md)
+These source-mapping/builtin remedies follow the maintained component references.
+Use the matching release tag for an installed runtime; the remedies do not add
+acceptance evidence to the historical tutorial capture. See [Sources and Connectors](sources.md)
 for setup and version boundaries.
 
-For development startup issues, see [frontend troubleshooting](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/docs/troubleshooting.md).
+For development startup issues, see [frontend troubleshooting](https://github.com/oraylis/datam8-frontend/blob/main/docs/troubleshooting.md).
 
 ## Glossary
 

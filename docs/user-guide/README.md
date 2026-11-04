@@ -28,6 +28,10 @@ are preserved; sample attribute names such as `KundenID` are not translated.
 
 ## Version and evidence
 
+For current stable app and CLI downloads, start with [installation](../installation.md).
+The screenshots and acceptance results below retain their historical revisions;
+they do not certify a different release/sample combination.
+
 This guide uses sample commit
 `1e1855e59e2734b3a393f9128193504626ab9380` and the exact backend/schema combination recorded below. This four-target sample
 is distinct from the three-target sample main baseline; see [compatibility](../compatibility.md).
@@ -41,4 +45,4 @@ native Electron behavior or generation of every target. See the
 [acceptance report](acceptance.md) for coverage and limitations.
 
 For contributors: [documentation index](../index.md),
-[capture and maintenance](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/docs/user-guide/capture.md), [review findings](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/docs/documentation-review.md).
+[capture and maintenance](https://github.com/oraylis/datam8-frontend/blob/main/docs/user-guide/capture.md), [review findings](https://github.com/oraylis/datam8-frontend/blob/main/docs/documentation-review.md).

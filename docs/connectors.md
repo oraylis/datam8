@@ -19,25 +19,27 @@ saved mappings determine model types.
 
 ## Start with the backend example
 
-Follow [the runnable offline connector example](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/docs/plugin-example.md).
+Follow [the runnable offline connector example](https://github.com/oraylis/datam8-cli/blob/main/docs/plugin-example.md).
 It creates a new disposable solution, lists static metadata and imports columns
 without a database or cloud account. It demonstrates separate type dimensions,
 saved mappings and inspecting the persisted entity.
 
-The [Python plugin reference](https://github.com/oraylis/datam8-cli/blob/feature/external_refresh/docs/connectors.md)
+The [Python plugin reference](https://github.com/oraylis/datam8-cli/blob/main/docs/connectors.md)
 defines required/optional methods, manifest discovery, connection fields, secrets,
 capabilities, metadata, source definitions and refresh behavior. This technical
 reference belongs with the backend implementation.
 
-Read [frontend consumer responsibilities](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/docs/connectors_dev.md)
+Read [frontend consumer responsibilities](https://github.com/oraylis/datam8-frontend/blob/main/docs/connectors_dev.md)
 when contributing to the UI, and [Sources and Connectors](user-guide/sources.md)
 when configuring or using an existing connector.
 
 ## Version and verification
 
-These links describe the current development branches and their pinned schemas.
-They do not establish support in desktop beta.6 or change the historical evidence
-in [compatibility](compatibility.md). Match backend, frontend and schema revisions.
+Developer references on `main` describe their respective checkouts and pinned
+schemas. For an installed release, open the technical references at its version
+tag and inspect the bundled runtime in its build manifest. Match backend, frontend
+and schema revisions. The [historical capture evidence](compatibility.md) records
+separate tutorial revisions.
 
 Test discovery, metadata, configured mappings, import, save/reload and refresh on
 disposable fixtures. Keep transport mocks and local tests distinct from real

@@ -76,13 +76,15 @@ Both diagrams are taken from the ORAYLIS Automation pitch. See
 
 | Your goal | Start here |
 | --- | --- |
-| Use DataM8 | [Install](docs/installation.md), then follow the [illustrated user guide](docs/user-guide/README.md) |
+| Use DataM8 | [Install the app or CLI](docs/installation.md), then follow the [illustrated user guide](docs/user-guide/README.md) |
 | Develop automations | [Concepts](docs/concepts.md), [sample and template development](docs/generator/README.md), then [CLI usage](docs/validator.md) |
 | Develop DataM8 | [Repository responsibilities](docs/repositories.md) and [contribution workflow](docs/contribution.md) |
 
 Use the [documentation index](docs/index.md) for all topics. This documentation
-covers DataM8 v2, currently in beta. Before combining components, consult
-[compatibility and verification evidence](docs/compatibility.md).
+covers DataM8 v2. Start with the current stable app or CLI release linked from
+[installation](docs/installation.md). Release notes describe version-specific
+requirements; [historical capture evidence](docs/compatibility.md) records the
+separate revisions used for the illustrated tutorial.
 
 [Issues](https://github.com/oraylis/datam8/issues) are tracked here. Include the
 component and exact versions using the issue form. For sensitive reports, use

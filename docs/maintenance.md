@@ -27,8 +27,21 @@ locally and commit-bound references through Git without contacting source system
 
 For a UI workflow change, update the affected chapter, regenerate affected images,
 inspect them visually and copy the complete export with its manifest. Use the
-[frontend capture procedure](https://github.com/oraylis/datam8-frontend/blob/feature/external_refresh/docs/user-guide/capture.md). Keep raw
+[frontend capture procedure](https://github.com/oraylis/datam8-frontend/blob/main/docs/user-guide/capture.md). Keep raw
 screenshots/logs locally; publish sanitized images with honest coverage descriptions.
+
+## Version policy
+
+General installation pages link to each product's current stable release rather
+than naming a current release number. Use `<version>` in package filename examples
+and direct readers to the selected release's Assets and verification files.
+Developer references follow `main`; installed-release behavior uses the matching
+tag. Keep exact versions only for behavior changes, compatibility constraints,
+release notes and recorded evidence. A routine release should not require edits
+to otherwise unchanged handbook chapters.
+
+Preserve screenshot manifests, capture commits and dated test results. Updating a
+release link or prose does not revalidate those captures against a new runtime.
 
 ## Release review
 
