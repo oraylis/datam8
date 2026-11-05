@@ -10,6 +10,25 @@ Developed by ORAYLIS, DataM8 brings together a visual editor, an extensible meta
 model and a command-line generator — helping teams spend less time on repetitive
 implementation and more time delivering business value.
 
+## Start with your task
+
+This repository is the product overview and English user handbook. You do not
+need to build DataM8 from source to use the app or CLI.
+
+| I want to… | Begin here | First result |
+| --- | --- | --- |
+| Edit a model visually | [Install the app](docs/installation.md#datam8-app), then [open a sample copy](docs/user-guide/getting-started.md) | Change a description, reload it and generate model documentation |
+| Maintain models or automate generation from the command line | [Install the CLI](docs/installation.md#datam8-cli), then [validate and generate](docs/validator.md) | Validate a local solution and inspect freshly generated files |
+| Adapt templates and target conventions | [Automation concepts](docs/concepts.md) and [template development](docs/generator/README.md) | Change one template on a disposable sample and inspect its output |
+| Develop a source connector | [Build a connector](docs/connectors.md) | Import static metadata using the runnable offline example |
+| Improve the editor, backend or schemas | [Choose the owning repository](docs/repositories.md) and [contribution workflow](docs/contribution.md) | Set up the relevant component and run its focused checks |
+
+**Recommended first exercise:** use the app with a disposable sample copy, edit
+Customer, verify save/reload and generate `docs`. The tutorial records its exact
+[capture revisions](docs/compatibility.md); release-specific compatibility is
+documented with the selected release. Generating files does not deploy or execute
+them on a data platform.
+
 ## Why DataM8?
 
 - **Faster development:** generate repetitive code from metadata and focus on
@@ -71,14 +90,6 @@ and execution are subsequent steps in your platform's workflow.
 
 Both diagrams are taken from the ORAYLIS Automation pitch. See
 [illustration sources](docs/assets/images/README.md) for provenance.
-
-## Get started
-
-| Your goal | Start here |
-| --- | --- |
-| Use DataM8 | [Install the app or CLI](docs/installation.md), then follow the [illustrated user guide](docs/user-guide/README.md) |
-| Develop automations | [Concepts](docs/concepts.md), [sample and template development](docs/generator/README.md), then [CLI usage](docs/validator.md) |
-| Develop DataM8 | [Repository responsibilities](docs/repositories.md) and [contribution workflow](docs/contribution.md) |
 
 Use the [documentation index](docs/index.md) for all topics. This documentation
 covers DataM8 v2. Start with the current stable app or CLI release linked from
