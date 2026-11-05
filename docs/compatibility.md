@@ -36,21 +36,6 @@ This is a development combination, not an installed-release recommendation. The
 [original manifest](user-guide/assets/manifest.json) records five passing checks,
 22 captures and limits. Moving the images does not retest another version.
 
-## Historical sample baseline and CLI run
-
-The sample documentation branch started at main commit
-`68001a2dcaa0b2931ee341f3527b96266a6e46da`. Its descriptor defines **three** targets:
-databricks (`Generate/databricks-lake`), powerbi and docs. Its package configuration
-pinned CLI beta.1. This records the old package pin, not a current installation
-recommendation. Do not combine its paths with the four-target tutorial snapshot.
-The recorded CLI run below checked generation of this baseline separately.
-
-The 2026-10-01 CLI run passed validate and docs generation using backend
-`85683fcaeaf13c4573bee3de9c4668b1ba3ab3b9` and its pinned schema
-`f7dd5f519c5e17c5b595c5b99f600c51b9fe84ac`. The copied pre-existing index was
-removed before generating; the new index contains Customer. This verifies that
-CLI path, not desktop beta.6, source connectivity or all targets. See [verification](verification.md).
-
 ## Accepting a release combination
 
 Record the release artifact, platform/architecture, packaged backend version and

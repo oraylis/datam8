@@ -33,4 +33,4 @@ no compatibility with the Python connector interface has been established here.
 Developer references target `main` and describe the respective checkout. For an
 installed release, use technical references at its version tag and the runtime
 identities in its build manifest. Tutorial and capture references remain pinned to
-tested commits. The [original integration handoff](handoff.md) is historical.
+tested commits.

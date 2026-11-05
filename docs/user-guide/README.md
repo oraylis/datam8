@@ -45,4 +45,4 @@ native Electron behavior or generation of every target. See the
 [acceptance report](acceptance.md) for coverage and limitations.
 
 For contributors: [documentation index](../index.md),
-[capture and maintenance](https://github.com/oraylis/datam8-frontend/blob/main/docs/user-guide/capture.md), [review findings](https://github.com/oraylis/datam8-frontend/blob/main/docs/documentation-review.md).
+[capture and maintenance](https://github.com/oraylis/datam8-frontend/blob/main/docs/user-guide/capture.md).

@@ -21,6 +21,4 @@
 - [Documentation and screenshot maintenance](maintenance.md)
 - [Security reporting and secret handling](security_guidelines.md)
 - [Follow-up backlog](todos.md)
-- [Manual merge handoff](handoff.md)
-- [Historical verification results](verification.md)
 - [Historical capture and release provenance](compatibility.md)

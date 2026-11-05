@@ -16,14 +16,19 @@ code. Read [responsibilities](repositories.md) before adding a technical section
 Run Node 24: `node --test scripts/check-docs.test.mjs` and
 `node scripts/check-docs.mjs`. CI checks local links, anchors, image existence,
 alt text and capture evidence. External URLs are not fetched by ordinary CI.
+For repository-link tooling changes, also run
+`node --test scripts/check-repository-links.test.mjs`.
 Check newly introduced cross-repository links against the intended branch/commit
-before handoff; see [handoff](handoff.md) for unpublished branch dependencies.
+before submitting a PR; linked pages must be available on the intended branch.
 
 For a local cross-repository check, create a JSON object mapping `datam8`,
 `datam8-frontend`, `datam8-cli`, `datam8-model` and `datam8-sample-solution` to
 absolute checkout paths, then run `node scripts/check-repository-links.mjs
---workspace-map /path/to/workspaces.json`. The checker resolves feature content
-locally and commit-bound references through Git without contacting source systems.
+--workspace-map /path/to/workspaces.json --prefer-workspace`. This validates
+branch links against the mapped working copies before merge; tag/commit references
+remain bound to their Git revision. Without `--prefer-workspace`, branch links
+use fetched origin refs, with local refs as a fallback. Fetch the relevant refs
+before checking. No source system is contacted.
 
 For a UI workflow change, update the affected chapter, regenerate affected images,
 inspect them visually and copy the complete export with its manifest. Use the
