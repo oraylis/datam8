@@ -13,5 +13,5 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 24
-      - run: node --test scripts/check-docs.test.mjs
+      - run: node --test scripts/check-docs.test.mjs scripts/check-repository-links.test.mjs
       - run: node scripts/check-docs.mjs --require-capture

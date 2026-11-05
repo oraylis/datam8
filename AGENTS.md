@@ -15,6 +15,8 @@ This repository owns the v2 product entry point and English user handbook.
 - Continue authorized local editing and documentation checks without a separate
   approval for each step. Keep unrelated changes intact.
 - Run `node --test scripts/check-docs.test.mjs` and `node scripts/check-docs.mjs`.
-  The checks need Node 24 and no sample checkout.
+  Repository-link tooling changes also run
+  `node --test scripts/check-repository-links.test.mjs`. Checks need Node 24;
+  link-tool regression tests use Git and disposable local repositories, no sample checkout.
 - Report passes, failures and skips separately. Feature branches are merged manually
   by the maintainer; [maintenance](docs/maintenance.md) defines publication checks.
